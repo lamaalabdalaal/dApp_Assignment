@@ -1,71 +1,5 @@
 [
 	{
-		"inputs": [
-			{
-				"name": "",
-				"type": "bool"
-			}
-		],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "uint256",
-				"name": "amount",
-				"type": "uint256"
-			}
-		],
-		"name": "withdrawl",
-		"outputs": [
-			{
-				"internalType": "bool",
-				"name": "",
-				"type": "bool"
-			}
-		],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"name": "KYCRecords",
-		"outputs": [
-			{
-				"internalType": "uint256",
-				"name": "customer_id",
-				"type": "uint256"
-			},
-			{
-				"internalType": "string",
-				"name": "full_name",
-				"type": "string"
-			},
-			{
-				"internalType": "string",
-				"name": "profession",
-				"type": "string"
-			},
-			{
-				"internalType": "string",
-				"name": "date_of_birth",
-				"type": "string"
-			},
-			{
-				"internalType": "address",
-				"name": "wallet_addr",
-				"type": "address"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
 		"inputs": [],
 		"name": "get_account_info",
 		"outputs": [
@@ -121,13 +55,21 @@
 	{
 		"inputs": [
 			{
-				"internalType": "string",
-				"name": "full_name",
-				"type": "string"
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "kycRecords",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "customer_id",
+				"type": "uint256"
 			},
 			{
 				"internalType": "string",
-				"name": "customer_id",
+				"name": "full_name",
 				"type": "string"
 			},
 			{
@@ -138,6 +80,37 @@
 			{
 				"internalType": "string",
 				"name": "date_of_birth",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "wallet_addr",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "customer_id_",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "full_name_",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "profession_",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "date_of_birth_",
 				"type": "string"
 			}
 		],
