@@ -1,7 +1,32 @@
 <html>
-  <head>
-  </head>
+
+    <!-- <script src="https://cdn .jsdelivr. net/npm/(@metamask/detect - provider@1 .2.0/dist/index . min.js"> </script>-->
+    <script src ="https: //can.jsdelivr. net/npm/web3@1atest/ dist / web3 . min.js"></script>
+
+        <script>
+
+             // myProvider = new Web3 . providers . HttpProvider ('http://localhost : 8545' );
+             // web3 = new Web3 () ;
+             // accounts = web3.eth. accounts;  
+             // alert (accounts [O]);
+            if (!ethereum. isMetaMask || window.ethereum. isMetalMask) {     
+               throw new Error(' Please install MetaMask. ')
+            }
+            ethereum. request({ method: 'eth_requestAccounts' });
+            var web3 = new Web3(ethereum)
+            web3.eth.getAccounts ().then (console. log);
+
+        </script>
+<head>
+
+</head>
+
+
+
+
+
+     </script>
   <body>
-    <h1> Hello Amazing World<h1>
+    <h1> Hello Amazing World</h1>
   </body>
 </html>
